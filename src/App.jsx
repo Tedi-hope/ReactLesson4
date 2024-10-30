@@ -44,6 +44,12 @@ const data=[
       Example: {isLoggedIn ? <Dashboard /> : <Login />}.',
  },
 
+ {
+  imgurl:'',
+  title: '',
+  description: '',
+ },
+
 ];
   return (
     <CardList arraydata={data} />
@@ -52,3 +58,4 @@ const data=[
 }
 
 export default App
+

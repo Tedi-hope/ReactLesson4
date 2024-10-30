@@ -1,3 +1,4 @@
+import img1 from './assets/images/img1.png';
 
 function Card({image,title,descrip}) {
  return(
@@ -13,14 +14,13 @@ function Card({image,title,descrip}) {
  );
 }
 
-export default Card
+//default url for image  https://via.placeholder.com/150
 
-/*
-{data.map((item)=>(
-       <div className="card" >
-          <img src={item.imgurl} alt={item.title} />
-         <h5>{item.title}</h5>
-         <p>{item.description}</p>
-       </div>
-       ))}
- */
+Card.defaultProps={
+  image:img1,
+  title:"React Default",
+  descrip:"Default Values",
+ };
+
+ export default Card
+

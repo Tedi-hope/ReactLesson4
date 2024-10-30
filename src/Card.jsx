@@ -1,4 +1,8 @@
+import React from 'react';
+
 import img1 from './assets/images/img1.png';
+
+import PropTypes from 'prop-types';
 
 function Card({image,title,descrip}) {
  return(
@@ -21,6 +25,14 @@ Card.defaultProps={
   title:"React Default",
   descrip:"Default Values",
  };
+
+
+// Validate prop types
+Card.propTypes = {
+  image:PropTypes.string,
+  title:PropTypes.string.isRequired,
+  descrip:PropTypes.string,
+};
 
  export default Card
 

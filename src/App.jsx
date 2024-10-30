@@ -45,7 +45,7 @@ const data=[
  },
 
  {
-  imgurl:'',
+  imgurl:'' ,
   title: '',
   description: '',
  },
@@ -58,4 +58,3 @@ const data=[
 }
 
 export default App
-
